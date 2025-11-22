@@ -27,7 +27,7 @@ int main()
     int currentlyExaminedDigit;
 
     setvbuf(stdout, NULL, _IONBF, 0);
-    
+
     // MAIN MENU LOOP
     do {
         printf("Welcome to our games, please choose an option:\n"
@@ -74,7 +74,7 @@ int main()
                 printf("please enter the number of ducks:\n");
 
                 do {
-                    scanf("%u", &numberOfDucks);
+                    scanf("%d", &numberOfDucks);
 
                     if (numberOfDucks <= 0) {
                         printf("Invalid number, please try again\n");
