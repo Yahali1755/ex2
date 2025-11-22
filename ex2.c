@@ -71,7 +71,7 @@ int main()
                 printf("please enter the number of ducks:\n");
 
                 do {
-                    scanf("%d", &numberOfDucks);
+                    scanf("%u", &numberOfDucks);
 
                     if (numberOfDucks <= 0) {
                         printf("Invalid number, please try again\n");
@@ -136,12 +136,12 @@ int main()
 
                 poweredNumber = numberToPower;
 
-                for (int i = 0; i < exponent - 1; i++) {
-                    // multiply the number by itself, exponent - 1 times to get the power
-                    poweredNumber *= numberToPower;
-                }
-
                 if (exponent != 0) {
+                    for (int i = 0; i < exponent - 1; i++) {
+                        // multiply the number by itself, exponent - 1 times to get the power
+                        poweredNumber *= numberToPower;
+                    }
+
                     printf("your power is: %d\n", poweredNumber);
                 } else {
                     printf("your power is: 1\n");
