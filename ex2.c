@@ -161,6 +161,7 @@ int main()
                 } while (ducksInDuckParade <= 0);
 
                 do {
+                    // Print up to 10 ducks per line
                     ducksPerLine = (ducksInDuckParade >= 10) ? 10 : ducksInDuckParade;
 
                     for (int i = 1; i <= ducksPerLine; i++) {
@@ -214,6 +215,7 @@ int main()
                             break;
                         }
 
+                        // Get rid of the unit's digit by dividing by 10
                         temporaryNumber /= 10;
                     }
 
