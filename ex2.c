@@ -13,8 +13,9 @@ int main()
     int exitKeywordNumber = 6;
     int positiveNumber;
     int summaryOfGoldenCorns = 0;
-    unsigned int numberOfDucks;
-    int eachDuckNumberByBits = 0;
+    int numberOfDucks;
+    // unsigned long long for 64 available bits to represnt 64 ducks
+    unsigned long long eachDuckNumberByBits = 0;
     int duckSaidWhichNumber;
     int exponent;
     int numberToPower;
@@ -80,7 +81,7 @@ int main()
 
                 printf("you entered %d ducks\n", numberOfDucks);
 
-                for (unsigned int i = 1; i <= numberOfDucks; i++) {
+                for (int i = 1; i <= numberOfDucks; i++) {
                     do {
                         printf("duck %d do QUAK? 1 for yes, 0 for no\n", i);
 
@@ -100,7 +101,7 @@ int main()
                     } while (duckSaidWhichNumber != 1 && duckSaidWhichNumber != 0);
                 };
 
-                for (unsigned int i = 1; i <= numberOfDucks; i++) {
+                for (int i = 1; i <= numberOfDucks; i++) {
                     // shift to the bit that represents the duck number and bitmask 1 to check its value
                     if ((eachDuckNumberByBits >> (numberOfDucks - i)) & 1) {
                         printf("duck number %d do Quak\n", i);
