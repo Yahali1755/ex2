@@ -25,6 +25,8 @@ int main()
     int repeatedDigitNumber;
     int temporaryNumber;
     int currentlyExaminedDigit;
+
+    setvbuf(stdout, NULL, _IONBF, 0);
     
     // MAIN MENU LOOP
     do {
