@@ -163,7 +163,7 @@ int main()
                     }
                 } while (ducksInDuckParade <= 0);
 
-                do {
+                while (ducksInDuckParade > 0) {
                     // Print up to 10 ducks per line
                     ducksPerLine = (ducksInDuckParade >= 10) ? 10 : ducksInDuckParade;
 
@@ -187,12 +187,12 @@ int main()
                     }
 
                     // remove printed ducks
-                    ducksInDuckParade -= 10;
+                    ducksInDuckParade -= ducksPerLine;
 
                     printf("\n");
 
                     fflush(stdout);
-                } while (ducksInDuckParade > 0);
+                }
 
                 break;
             // TASK 5: The Mystery of the Repeated Digits
