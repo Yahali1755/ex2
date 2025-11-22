@@ -158,10 +158,14 @@ int main()
                 do {
                     scanf("%d", &ducksInDuckParade);
 
-                    if (ducksInDuckParade <= 0) {
+                    if (ducksInDuckParade < 0) {
                         printf("Invalid number, please try again\n");
                     }
-                } while (ducksInDuckParade <= 0);
+                } while (ducksInDuckParade < 0);
+
+                if (ducksInDuckParade == 0) {
+                    break;
+                }
 
                 while (ducksInDuckParade > 0) {
                     // Print up to 10 ducks per line
