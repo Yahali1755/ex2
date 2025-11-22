@@ -82,7 +82,7 @@ int main()
 
                 for (unsigned int i = 1; i <= numberOfDucks; i++) {
                     do {
-                        printf("duck %d said QUAK? 1 for yes, 0 for no\n", i);
+                        printf("duck %d do QUAK? 1 for yes, 0 for no\n", i);
 
                         scanf("%d", &duckSaidWhichNumber);
 
@@ -103,9 +103,9 @@ int main()
                 for (unsigned int i = 1; i <= numberOfDucks; i++) {
                     // shift to the bit that represents the duck number and bitmask 1 to check its value
                     if ((eachDuckNumberByBits >> (numberOfDucks - i)) & 1) {
-                        printf("Duck number %d do Quak\n", i);
+                        printf("duck number %d do Quak\n", i);
                     } else {
-                        printf("Duck number %d do Sh...\n", i);
+                        printf("duck number %d do Sh...\n", i);
                     }
                 }
 
@@ -142,15 +142,15 @@ int main()
                 }
 
                 if (exponent != 0) {
-                    printf("Your power is: %d\n", poweredNumber);
+                    printf("your power is: %d\n", poweredNumber);
                 } else {
-                    printf("Your power is: 1\n");
+                    printf("your power is: 1\n");
                 }
 
                 break;
             // TASK 4: The Duck Parade
             case 4:
-                printf("please enter the number of ducks:\n");
+                printf("please enter number of ducks:\n");
 
                 do {
                     scanf("%d", &ducksInDuckParade);
@@ -210,7 +210,7 @@ int main()
                     // Compare currently examined digit with each digit with the input number
                     while (temporaryNumber > 0) {
                         if (currentlyExaminedDigit == temporaryNumber % 10) {
-                            printf("%d appears more then once!\n", currentlyExaminedDigit);
+                            printf("%d appears more than once!\n", currentlyExaminedDigit);
 
                             break;
                         }
@@ -225,7 +225,7 @@ int main()
                 break;
             // TASK 6: EXIT
             case 6:
-                printf("Good night! see you at the pond tomorrow.\n");
+                printf("Good night! see you at the pond tomorrow.");
 
                 break;
             default:
