@@ -26,8 +26,6 @@ int main()
     int temporaryNumber;
     int currentlyExaminedDigit;
 
-    setvbuf(stdout, NULL, _IONBF, 0);
-
     // MAIN MENU LOOP
     do {
         printf("Welcome to our games, please choose an option:\n"
@@ -194,8 +192,6 @@ int main()
                     ducksInDuckParade -= ducksPerLine;
 
                     printf("\n");
-
-                    fflush(stdout);
                 }
 
                 break;
@@ -235,8 +231,6 @@ int main()
             // TASK 6: EXIT
             case 6:
                 printf("Good night! See you at the pond tomorrow.\n");
-
-                fflush(stdout);
 
                 break;
             default:
