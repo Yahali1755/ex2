@@ -225,7 +225,7 @@ int main()
                 break;
             // TASK 6: EXIT
             case 6:
-                printf("Good night! See you at the pond tomorrow.");
+                printf("Good night! See you at the pond tomorrow.\n");
 
                 break;
             default:
