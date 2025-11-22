@@ -190,6 +190,8 @@ int main()
                     ducksInDuckParade -= 10;
 
                     printf("\n");
+
+                    fflush(stdout);
                 } while (ducksInDuckParade > 0);
 
                 break;
@@ -229,6 +231,8 @@ int main()
             // TASK 6: EXIT
             case 6:
                 printf("Good night! See you at the pond tomorrow.\n");
+
+                fflush(stdout);
 
                 break;
             default:
