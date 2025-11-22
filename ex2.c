@@ -100,7 +100,7 @@ int main()
                     } while (duckSaidWhichNumber != 1 && duckSaidWhichNumber != 0);
                 };
 
-                for (int i = 1; i <= numberOfDucks; i++) {
+                for (unsigned int i = 1; i <= numberOfDucks; i++) {
                     // shift to the bit that represents the duck number and bitmask 1 to check its value
                     if ((eachDuckNumberByBits >> (numberOfDucks - i)) & 1) {
                         printf("Duck number %d do Quak\n", i);
