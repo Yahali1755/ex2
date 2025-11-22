@@ -53,7 +53,7 @@ int main()
 
                 while (positiveNumber > 0) {
                      // Count lsb's with the value of 1
-                    if (positiveNumber & 1 == 1) {
+                    if ((positiveNumber & 1) == 1) {
                         summaryOfGoldenCorns++;
                     }
 
@@ -80,7 +80,7 @@ int main()
 
                 printf("you entered %d ducks\n", numberOfDucks);
 
-                for (int i = 1; i <= numberOfDucks; i++) {
+                for (unsigned int i = 1; i <= numberOfDucks; i++) {
                     do {
                         printf("duck %d said QUAK? 1 for yes, 0 for no\n", i);
 
